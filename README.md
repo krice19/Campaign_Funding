@@ -21,9 +21,8 @@ However, this possibility would depend on various factors, such as the country t
 In this analysis, I looked at the outcome the subcategory "plays" within the theater cateogry based on goal amount. The data I extracted was the total number of successes, failures, and canceled campaings within a certain monetary value range.  I was able to use COUNTIFS function to extract this data based on the specifications.  An example of the code is below: <br />
 =COUNTIFS('Kickstarter Data'!$D:$D,"<49999",  'Kickstarter Data'!$D:$D,">=45000",'Kickstarter Data'!$F:$F, "Failed",'Kickstarter Data'!$R:$R, "plays") <br />
 I changed the number values to fit certain ranges.  I started at a ranged of "less than 1000" and worked up to. a range of "greater than 50,000", each range in increments of 4999.  I took the count for each outcome, the sum for each monetary range, and calculated the percentages of the outcomes.  
-
-
-We can see that lower goal amounts had higher successful campaings.  We start to see a rise in failed campigns at around $15000-$19999 range.  However, we see a spike in successful campaings again around $35000 - $40000.
+![OutcomesGoal](https://user-images.githubusercontent.com/63257696/115797046-fb3b6280-a3a0-11eb-86da-46464ab2d429.png)
+We can see that lower goal amounts have a greater percentage of successes.  The highest percentage of successful play kickstarters were launched with a goal range on less than $1000, at 76%.  We start to see a rise in failed play campaigns at around $15000-$19999 range.  However, we see a spike in successful campaings again around $35000 - $40000.
 ### Challenges and Difficulties Encountered
 launch date - only failed campaigns starting in 2014 - so number of successes in first 5 years of data might be pulling the successful numbers up as opposed to failed 
 we looked at data throughout 2009 -2017. and summed the total number which told us what month had the. highest numbre of successes.  May was historically the highest, but as a total, it might different depending onoutside factors, like the economy. 
